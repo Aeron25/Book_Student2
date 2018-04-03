@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/paper"
+    tools:context="com.ajgarcia.book_student.Borrowed">
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:background="@drawable/shape"
+        android:layout_marginBottom="25dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/e_remarks"
+        android:layout_alignStart="@+id/e_remarks"
+        android:layout_marginLeft="38dp"
+        android:layout_marginStart="38dp" />
+
+    <Button
+        android:id="@+id/btnView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View"
+        android:background="@drawable/shape"
+        android:layout_alignBaseline="@+id/btnAdd"
+        android:layout_alignBottom="@+id/btnAdd"
+        android:layout_toRightOf="@+id/btnAdd"
+        android:layout_toEndOf="@+id/btnAdd"
+        android:layout_marginLeft="35dp"
+        android:layout_marginStart="35dp" />
+
+
+    <Spinner
+        android:id="@+id/spinstud"
+        android:background="@drawable/round"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:layout_above="@+id/e_student"
+        android:layout_centerHorizontal="true"
+         />
+
+    <EditText
+        android:id="@+id/e_student"
+        android:layout_marginTop="15dp"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:background="@drawable/round"
+        android:drawableLeft="@drawable/ic_action_name"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="Student Name"
+        android:inputType="textPersonName"
+        android:layout_above="@+id/spinbook"
+        android:layout_alignLeft="@+id/spinstud"
+        android:layout_alignStart="@+id/spinstud" />
+
+    <Spinner
+        android:id="@+id/spinbook"
+        android:background="@drawable/round"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="15dp"
+        android:layout_above="@+id/e_book"
+        android:layout_alignLeft="@+id/e_student"
+        android:layout_alignStart="@+id/e_student" />
+
+    <EditText
+        android:id="@+id/e_book"
+        android:drawableLeft="@drawable/ic_action_bookname"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:background="@drawable/round"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="Book Name"
+        android:layout_marginTop="15dp"
+        android:inputType="textPersonName"
+        android:layout_above="@+id/e_bdate"
+        android:layout_alignLeft="@+id/spinbook"
+        android:layout_alignStart="@+id/spinbook"
+         />
+
+    <EditText
+        android:id="@+id/e_bdate"
+        android:hint="Borrowed Date"
+        android:drawableLeft="@drawable/ic_bordate"
+        android:background="@drawable/round"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_above="@+id/e_rdate"
+        android:layout_alignLeft="@+id/e_book"
+        android:layout_alignStart="@+id/e_book" />
+
+    <EditText
+        android:id="@+id/e_rdate"
+        android:drawableLeft="@drawable/ic_action_date"
+        android:hint="Return Date"
+        android:background="@drawable/round"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_above="@+id/e_remarks"
+        android:layout_alignLeft="@+id/e_bdate"
+        android:layout_alignStart="@+id/e_bdate" />
+
+    <EditText
+        android:id="@+id/e_remarks"
+        android:drawableLeft="@drawable/ic_rem"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:background="@drawable/round"
+        android:ems="10"
+        android:hint="Remarks"
+        android:layout_marginTop="15dp"
+        android:inputType="textPersonName"
+        android:layout_marginBottom="27dp"
+        android:layout_above="@+id/btnView"
+        android:layout_alignLeft="@+id/e_rdate"
+        android:layout_alignStart="@+id/e_rdate" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="500dp"
+        android:layout_height="95dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        app:srcCompat="@drawable/bbook"
+        android:layout_above="@+id/spinstud" />
+
+
+</RelativeLayout>

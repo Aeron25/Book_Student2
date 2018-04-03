@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/paper"
+    tools:context="com.ajgarcia.book_student.student">
+
+
+    <EditText
+        android:id="@+id/e_book"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/round"
+        android:drawableLeft="@drawable/ic_action_course"
+        android:ems="10"
+        android:hint="Book ID"
+        android:inputType="number"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp" />
+
+    <EditText
+        android:id="@+id/e_name"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/round"
+        android:ems="10"
+        android:hint="Name"
+        android:drawableLeft="@drawable/ic_action_bookname"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/e_book"
+        android:layout_alignLeft="@+id/e_book"
+        android:layout_alignStart="@+id/e_book"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:id="@+id/e_author"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/round"
+        android:ems="10"
+        android:hint="Author"
+        android:drawableLeft="@drawable/ic_action_author"
+        android:inputType="textPersonName"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/e_name"
+        android:layout_alignLeft="@+id/e_name"
+        android:layout_alignStart="@+id/e_name" />
+
+    <EditText
+        android:id="@+id/e_pub"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/round"
+        android:ems="10"
+        android:hint="Published Date"
+        android:drawableLeft="@drawable/ic_action_date"
+        android:inputType="textPersonName"
+
+        android:layout_below="@+id/e_author"
+        android:layout_alignLeft="@+id/e_author"
+        android:layout_alignStart="@+id/e_author"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:background="@drawable/shape"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/e_pub"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/btnView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View"
+        android:layout_alignBaseline="@+id/btnAdd"
+        android:layout_alignBottom="@+id/btnAdd"
+        android:layout_toRightOf="@+id/btnAdd"
+        android:layout_toEndOf="@+id/btnAdd"
+        android:background="@drawable/shape"/>
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:background="@drawable/shape"
+        android:layout_alignBaseline="@+id/btnView"
+        android:layout_alignBottom="@+id/btnView"
+        android:layout_toRightOf="@+id/btnView"
+        android:layout_toEndOf="@+id/btnView" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+
+        android:background="@drawable/shape"
+        android:layout_alignBaseline="@+id/btnUpdate"
+        android:layout_alignBottom="@+id/btnUpdate"
+        android:layout_toRightOf="@+id/btnUpdate"
+        android:layout_toEndOf="@+id/btnUpdate" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        app:srcCompat="@drawable/book" />
+
+
+</RelativeLayout>

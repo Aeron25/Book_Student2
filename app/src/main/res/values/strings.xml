@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Library</string>
+    <string-array name="semester">
+        <item>1st Semester</item>
+        <item>2nd Semester</item>
+        <item>Summer</item>
+
+    </string-array>
+</resources>
